@@ -7,9 +7,22 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.author__avatar,
+.author__avatar a,
+.author__avatar a img,
 .author__avatar img {
   max-width: 200px;
   filter: none !important;
   -webkit-filter: none !important;
   opacity: 1 !important;
+  transition: none !important;
 }
+
+.author__avatar a:hover img,
+.author__avatar img:hover {
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+}
+
