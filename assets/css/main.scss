@@ -9,20 +9,22 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 .author__avatar,
-.author__avatar a,
-.author__avatar a img,
-.author__avatar img {
-  max-width: 200px;
+.author__avatar * {
   filter: none !important;
   -webkit-filter: none !important;
   opacity: 1 !important;
   transition: none !important;
 }
 
-.author__avatar a:hover img,
-.author__avatar img:hover {
+.author__avatar:hover,
+.author__avatar:hover * {
   filter: none !important;
   -webkit-filter: none !important;
   opacity: 1 !important;
 }
+.author__avatar img {
+  max-width: 200px;
+}
+
+
 
